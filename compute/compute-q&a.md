@@ -232,7 +232,7 @@
 
 1. Ce înseamnă waiting time (timp de așteptare) în planificarea proceselor?
 
-   Waiting time este impul pe care îl petrec procesele în starea READY.
+   Waiting time este timpul pe care îl petrec procesele în starea READY.
    Ideal, acesta este cât mai mic.
 
 1. Putem avea un sistem multi-core cu un singur proces aflat în starea RUNNING și mai multe procese în READY?
@@ -311,6 +311,7 @@
    `join()`
 
 1. De ce este nevoie de apelul pthread_wait() / pthread_join()?
+   Apelurile sunt necesare pentru a gestiona terminarea si eliberarea resurselor asociate unui thread.
 
 1. Ce tranziție între stările unui thread nu este posibilă?
 

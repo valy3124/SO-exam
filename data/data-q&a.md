@@ -184,7 +184,7 @@
 
 1. Ce înseamnă maparea unui fișier în memorie? De ce este avantajos să mapăm fișiere față de folosirea read/write?
 
-   Fișierele map-ate în memorie prezintă un mecanism prin care procesele acesează fișiere prin incorporarea lor directă în VAS.
+   Fișierele map-ate în memorie prezintă un mecanism prin care procesele accesează fișiere prin incorporarea lor directă în VAS.
    Astfel, se reduce în mod semnificativ I/O data movement (și overhead-ul temporal), întrucât datele fișierului nu mai trebuie copiate în buffer-ele procesului așa cum s-ar întâmpla în cazul funcțiilor `read()` și `write()`.
 
 1. Câte page fault-uri se pot obține în cazul operației *a = b?
